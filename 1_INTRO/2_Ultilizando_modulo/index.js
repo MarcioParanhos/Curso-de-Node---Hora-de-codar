@@ -1,11 +1,9 @@
-const fs = require('fs') //import para ler arquivos
+const fs = require("fs"); //import para ler arquivos
 
-fs.readFile('arquivo.txt', 'utf8', (err, data) =>{
+fs.readFile("arquivo.txt", "utf8", (err, data) => {
+  if (err) {
+    console.log(err);
+  }
 
-    if(err) {
-        console.log(err)
-    }
-
-    console.log(data)
-
-})
+  console.log(data);
+});
